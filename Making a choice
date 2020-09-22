@@ -1,0 +1,72 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled3.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMWkA8f8AYsefOxF/JRNuhV",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/manojpkumar/DSC/blob/master/Making%20a%20choice\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "R5Ja-uTMsA4W",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 68
+        },
+        "outputId": "1844263a-9f67-4f04-d811-6263facaf802"
+      },
+      "source": [
+        "thriller= [\"Dark\",\"Mindhunter\",\"Parasite\",\"Inception\",\"Insidious\",\"Interstellar\",\"Prison Break\",\"Money Heist\",\"War\",\"Jack Ryan\"]\n",
+        "comedy= [\"Friends\",\"3 Idiots\",\"Brooklyn 99\",\"How I Met Your Mother\",\"Rick And Morty\",\"The Big Bang Theory\",\"The Office\",\"Space Force\"]\n",
+        "\n",
+        "print(\"Enter the name of the movie/series\")\n",
+        "\n",
+        "watch=input()\n",
+        "watch=watch.lower()\n",
+        "thriller=map(str.lower,thriller)\n",
+        "comedy=map(str.lower,comedy)\n",
+        "\n",
+        "if watch in thriller:\n",
+        "  print(\"It is a thriller\")\n",
+        "\n",
+        "elif watch in comedy:\n",
+        "  print(\"It is a comedy\")\n",
+        "\n",
+        "else :\n",
+        "  print(\"It's neither comedy nor thriller\")"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the name of the movie/series\n",
+            "parasite\n",
+            "It is a thriller\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
