@@ -1,0 +1,61 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled3.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMYShbNswKL2AVYERVA4roQ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/manojpkumar/DSC/blob/master/Number%20of%20pairs\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "IUgJVx0ut9Qg",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 68
+        },
+        "outputId": "251ae42f-f1c2-41a8-bb72-98ccba7c62fe"
+      },
+      "source": [
+        "from collections import Counter \n",
+        "input()\n",
+        "pairs=0\n",
+        "gloves=Counter(map(int,input().strip().split()))\n",
+        "for i in gloves:\n",
+        "  pairs +=gloves[i]//2\n",
+        "print(pairs)  \n"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "3\n",
+            "5\n",
+            "0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
